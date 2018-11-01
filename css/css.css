@@ -1,0 +1,226 @@
+body, html{
+	margin:0;
+	padding:0;
+	font-family: "P TSans", sans-serif;
+}
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+img{
+	width:100%;
+	height:100%;
+		-ms-interpolation-mode:bicubic;
+	display:block;
+}
+header{
+	background-color:#eb5346;
+	height:90px;
+	width:100%;
+	text-align:center;
+	border-bottom:2px solid black;
+}
+section{
+	padding:1px 0 120px 0;
+}
+.MGcenter{
+	margin:0 auto;
+}
+.logo{
+	width:380px;
+	height:50px;
+	padding-top:25px;
+}
+.logoImg{
+	width:40px;
+	float:left;
+}
+.logo h3{
+	margin:14px 0 0 62px;
+	text-align:left;
+}
+h3{
+	color:#ffffff;
+}
+.wrap{
+	width:70%;
+	padding:0 15px;
+}
+.classRow, .Row{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.carClass{
+	width:calc((100%/3) - 20px);
+	cursor:pointer;
+}
+.carClass h3, .price h3{
+	min-height: 28px;
+	text-align:center;
+	font-weight: bold;
+	font-size: 18px;
+	margin:87px auto 10px;
+	padding-top:8px;
+}
+.carClass h3:first-child, .price h3{
+	max-width: 210px;
+	background-color: #252d39;
+}
+.carClass h3:nth-last-child(2){
+	width:90%;
+	background-color: #eb5346;
+}
+.arrow{
+	width: 32px;
+	height: 24px;
+	margin:0 auto;
+}
+.arrow img{
+	display:none;
+}.carClass:hover .arrow img{
+	display:block;
+}
+.leftMain{
+	width:79%;
+}
+.rightPlans{
+	border-left:1px solid black;
+	width:20%;
+	padding-bottom:20px;
+	cursor:pointer;
+}
+.rightPlans ul li{
+	min-height: 16px;
+	color: #252e39;
+	margin:8px 0;
+}
+.rightPlans ul:first-child li{
+	max-width: 180px;
+	padding:8px 0 7px 15px;
+	font-size:16px;
+}
+.rightPlans li img[title="arrow"]{
+	float:right;
+	width:16px;
+	height:11px;
+	margin-right:15px;
+}
+.rightPlans ul:first-child li:last-child{
+	color: #ffffff;
+	background-color: #252d39;
+	position:relative;
+}
+.blue{
+	height:100%;
+	position:absolute;
+	width:13px;
+	left:-13px;
+	top:0;
+}
+.rightPlans ul:first-child li:hover, .rightPlans ul:last-child li:hover{
+	background-color: #eb5346;
+	color:#ffffff;
+	position:relative;
+}
+.rightPlans ul:first-child li:last-child:hover{
+	background-color: #252d39;
+}
+.rightPlans ul:last-child li{
+	max-width: 160px;
+	padding:9px 0 8px 35px;
+	font-size:14px;
+	display:none;
+}
+.rightPlans ul:last-child{
+	min-height:295px;
+}
+.price h3{
+	height:28px;
+	width: 210px;
+	margin:25px auto;
+}
+.price h3, .parts ul li{
+	cursor:pointer;
+}
+.ulPrice li:first-child, .ulPrice span{
+	margin-bottom:5px;
+	color: #eb5346;
+}
+#cost{
+	margin-left:55px;
+}
+.ulPrice li:last-child{
+	border-top:1px solid black;
+}
+.parts{
+	margin-top:30px;
+	min-height:50px;
+}
+.parts ul{
+	display:none;
+	flex-direction:row;
+	justify-content:space-between;
+	width:100%;
+}
+.parts ul li{
+	width:calc(100%/8 - 20px);
+	margin:5px;
+	text-align:center;
+	color: #eb5346;
+}
+.parts ul li img{
+	max-height:35px;
+}
+p{
+	margin-top:30px;
+}
+@media screen  and (min-width: 100px) and (max-width: 905px){
+	
+	.wrap{
+		width:90%;
+		padding-right:0;
+	}
+}
+@media screen  and (min-width: 100px) and (max-width: 650px){
+	
+	.leftMain{
+	width:58%;
+}
+.rightPlans{
+	width:40%;
+	}
+	.Row{
+		display:block;
+	}
+	.parts{
+		min-height:50px;
+	}
+	.parts ul li p{
+		display:none;
+	}
+}
+@media screen  and (min-width: 100px) and (max-width: 605px){
+	
+	.carClass h3:first-child{
+		min-height:45px;
+	}
+	.logo{
+		width:100%
+	}
+	.carClass h3{
+		font-size:12px;
+	}
+}
+@media screen  and (min-width: 100px) and (max-width: 440px){
+	.carClass h3:nth-last-child(2){
+		overflow:hidden;
+	}
+}
+@media screen  and (min-width: 100px) and (max-width: 375px){
+	.wrap{
+		overflow:hidden;
+	}
+}
+
